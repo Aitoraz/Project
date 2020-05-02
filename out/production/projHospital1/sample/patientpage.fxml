@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="1032.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PatientController">
+    <children>
+        <AnchorPane prefHeight="109.0" prefWidth="1032.0" style="-fx-background-color: #8849ee;">
+            <children>
+                <Button fx:id="exit_button" layoutX="881.0" layoutY="36.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: #ea8e32;" text="Exit" textFill="WHITE">
+                    <font>
+                        <Font name="Script MT Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Label fx:id="topLabel" layoutX="45.0" layoutY="14.0" prefHeight="67.0" prefWidth="356.0" text="Hello,Patient" textFill="WHITE">
+                    <font>
+                        <Font name="Rockwell" size="53.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Pane layoutY="109.0" prefHeight="502.0" prefWidth="1032.0" style="-fx-background-color: #d0c3f1;">
+            <children>
+                <Label layoutX="540.0" layoutY="233.0" text="Your problem:" textFill="#504cda">
+                    <font>
+                        <Font name="Rockwell" size="30.0" />
+                    </font></Label>
+                <TableView fx:id="table" onMouseClicked="#displaySelected" prefHeight="271.0" prefWidth="504.0" style="-fx-background-color: #5a52eb;">
+                    <columns>
+                        <TableColumn fx:id="col_first" prefWidth="121.0" text="FirstName" />
+                        <TableColumn fx:id="col_last" prefWidth="99.0" text="LastName" />
+                        <TableColumn fx:id="col_login" prefWidth="78.0" text="Login" />
+                        <TableColumn fx:id="col_password" prefWidth="104.0" text="Password" />
+                        <TableColumn fx:id="col_usertype" prefWidth="101.0" text="UserType" />
+                    </columns>
+                </TableView>
+                <TextArea fx:id="problem_text" layoutX="540.0" layoutY="296.0" prefHeight="38.0" prefWidth="428.0" style="-fx-background-color: #d6d4ff; -fx-background-color: #d6d4ff;" />
+                <Button fx:id="enroll_button" layoutX="698.0" layoutY="387.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: #ea8e32;" text="Enroll" textFill="WHITE">
+                    <font>
+                        <Font name="Rockwell" size="18.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="screen" layoutX="540.0" layoutY="116.0" prefHeight="67.0" prefWidth="428.0" promptText="Name..." style="-fx-background-color: #d0c3f1; -fx-background-color: #ffffff;">
+                    <font>
+                        <Font name="Rockwell" size="21.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="show_button" layoutX="540.0" layoutY="50.0" mnemonicParsing="false" style="-fx-background-color: #ea8e32;" text="Show" textFill="WHITE">
+                    <font>
+                        <Font name="Rockwell" size="20.0" />
+                    </font>
+                </Button>
+                <Label fx:id="added_button" layoutX="681.0" layoutY="445.0" prefHeight="21.0" prefWidth="148.0">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="tableProblem" layoutY="271.0" prefHeight="232.0" prefWidth="504.0" style="-fx-background-color: #5a52eb;">
+                    <columns>
+                        <TableColumn fx:id="col_namePatient" prefWidth="171.0" text="NamePatient" />
+                        <TableColumn fx:id="col_problem" prefWidth="168.0" text="Problem" />
+                        <TableColumn fx:id="col_nameDoctor" minWidth="0.0" prefWidth="163.0" text="NameDoctor" />
+                    </columns>
+                </TableView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignController">
+    <children>
+        <TextField fx:id="firstName" layoutX="42.0" layoutY="200.0" promptText="FirstName" style="-fx-background-color: #fafafa;" text="FirstName" />
+        <TextField fx:id="lastName" layoutX="343.0" layoutY="200.0" promptText="LastName" style="-fx-background-color: #fafafa;" />
+        <TextField fx:id="login_text_field" layoutX="42.0" layoutY="270.0" promptText="Login" style="-fx-background-color: #fafafa;" />
+        <PasswordField fx:id="password_text_field" layoutX="343.0" layoutY="270.0" promptText="Password" style="-fx-background-color: #fafafa;" />
+        <Button fx:id="sign_up_button" layoutX="242.0" layoutY="399.0" mnemonicParsing="false" onAction="#signup" prefHeight="31.0" prefWidth="113.0" snapToPixel="false" style="-fx-background-color: #ea8e32;" text="Sign up" textFill="WHITE">
+            <font>
+                <Font name="Script MT Bold" size="20.0" />
+            </font>
+        </Button>
+        <Label layoutX="211.0" layoutY="22.0" prefHeight="67.0" prefWidth="187.0" text="Doctor" textFill="#f5f3f3">
+            <font>
+                <Font name="Script MT Bold" size="54.0" />
+            </font>
+        </Label>
+        <Label layoutX="180.0" layoutY="127.0" text="Registration" textFill="#6f6767">
+            <font>
+                <Font name="Script MT Bold" size="43.0" />
+            </font>
+        </Label>
+        <TextField fx:id="userType_field" layoutX="205.0" layoutY="331.0" promptText="UserType" style="-fx-background-color: #fafafa;" />
+        <AnchorPane layoutX="-5.0" prefHeight="119.0" prefWidth="610.0" style="-fx-background-color: #8849ee;">
+            <children>
+                <Label layoutX="214.0" layoutY="22.0" prefHeight="67.0" prefWidth="187.0" text="Doctor" textFill="#f5f3f3">
+                    <font>
+                        <Font name="Script MT Bold" size="54.0" />
+                    </font>
+                </Label>
+                <Button fx:id="back_button" layoutX="503.0" layoutY="40.0" mnemonicParsing="false" text="Back" />
+            </children>
+        </AnchorPane>
+        <Label fx:id="added_button" layoutX="376.0" layoutY="408.0" prefHeight="19.0" prefWidth="170.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
